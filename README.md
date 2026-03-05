@@ -6,45 +6,44 @@ This site provides guides, API references, and SDK usage examples to help develo
 
 ---
 
-# Overview
+## Overview
 
 Lariba Cloud is a developer platform for collecting, processing, and analyzing application events.
 
 The documentation covers:
 
-* Quickstart guides
-* Event ingestion
-* API authentication
-* SDK usage
-* Usage and billing
-* Project and API key management
+- Quickstart guides
+- Event ingestion
+- API authentication
+- SDK usage
+- Usage and billing
+- Project and API key management
 
 ---
 
-# Documentation Structure
+## Documentation Structure
 
 ```
 pages/
   index.mdx        # Introduction
   quickstart.mdx   # Getting started guide
-  _meta.json       # Sidebar navigation
 ```
 
 The documentation site is built using **Next.js** and **Nextra**.
 
 ---
 
-# Local Development
+## Local Development
 
 Install dependencies:
 
-```
+```bash
 npm install
 ```
 
 Start the development server:
 
-```
+```bash
 npm run dev
 ```
 
@@ -56,42 +55,42 @@ http://localhost:3000
 
 ---
 
-# Build for Production
+## Build for Production
 
-```
+```bash
 npm run build
 npm start
 ```
 
 ---
 
-# Technology Stack
+## Technology Stack
 
-* Next.js
-* Nextra
-* Nextra Docs Theme
-* React
-* TypeScript
+- Next.js
+- Nextra
+- Nextra Docs Theme
+- React
+- TypeScript
 
 ---
 
-# Related Repositories
+## Related Repositories
 
-Lariba Cloud is composed of multiple repositories:
+Lariba Cloud is composed of multiple repositories.
 
-**Core API**
+### Core API
 
 https://github.com/laribacloud/lariba-cloud
 
 FastAPI backend powering event ingestion, authentication, usage tracking, and billing.
 
-**API Specification**
+### API Specification
 
 https://github.com/laribacloud/lariba-spec
 
 OpenAPI specification describing the Lariba Cloud API.
 
-**JavaScript SDK**
+### JavaScript SDK
 
 https://github.com/laribacloud/lariba-sdk-js
 
@@ -99,7 +98,7 @@ Official JavaScript SDK for sending events to Lariba Cloud.
 
 ---
 
-# Example Event
+## Example Event
 
 ```javascript
 import { Lariba } from "@laribacloud/lariba-sdk-js"
@@ -115,6 +114,6 @@ await lariba.track("user.signup", {
 
 ---
 
-# License
+## License
 
 MIT License © Lariba Cloud

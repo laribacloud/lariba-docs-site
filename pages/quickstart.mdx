@@ -1,0 +1,65 @@
+# Quickstart
+
+This guide shows how to send your first event to **Lariba Cloud**.
+
+---
+
+## 1) Get an API Key
+
+Create an API key in your **Lariba Cloud dashboard**.
+
+You will use this key to authenticate API requests from your application.
+
+Example:
+
+```bash
+LARIBA_API_KEY=sk_test_123456
+```
+
+---
+
+## 2) Install the JavaScript SDK
+
+Install the Lariba SDK directly from GitHub:
+
+```bash
+npm install @laribacloud/lariba-sdk-js@github:laribacloud/lariba-sdk-js
+```
+
+---
+
+## 3) Send your first event
+
+```ts
+import { Lariba } from "@laribacloud/lariba-sdk-js"
+
+const lariba = new Lariba({
+  apiKey: process.env.LARIBA_API_KEY!
+})
+
+await lariba.track("user.signup", {
+  plan: "starter"
+})
+```
+
+---
+
+## 4) Verify the event
+
+Open your **Lariba Cloud dashboard → Events**.
+
+You should see an event like:
+
+```
+user.signup
+```
+
+---
+
+## Next Steps
+
+Continue exploring the Lariba Cloud platform:
+
+- Event ingestion API
+- API Keys
+- Usage & billing

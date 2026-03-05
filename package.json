@@ -16,6 +16,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
+  "overrides": {
+    "next-mdx-remote": "^6.0.0"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
@@ -25,8 +28,5 @@
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "overrides": {
-    "next-mdx-remote": "^5.0.0"
   }
 }

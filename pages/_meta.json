@@ -1,4 +1,12 @@
 {
   "index": "Introduction",
-  "quickstart": "Quickstart"
+  "quickstart": "Quickstart",
+
+  "concepts": "Concepts",
+  "guides": "Guides",
+  "reference": "Reference",
+
+  "authentication": "Authentication",
+  "sdks": "SDKs",
+  "changelog": "Changelog"
 }
